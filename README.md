@@ -1,6 +1,7 @@
 
 # Mastermind
 This project is part of the [The Odin Project](https://www.theodinproject.com/paths/full-stack-ruby-on-rails/courses/ruby-programming/lessons/mastermind)'s Ruby curriculum.
+![Example](./assets/example.gif)
 </br>
 _This project's previous commits are located in another github repository. I currently separated this from there._
 ## Game Description
