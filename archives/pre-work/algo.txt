@@ -1,0 +1,128 @@
+Mastermind - 
+	Building Mastermind game. Make and Break codes with computer. At a time either computer or human will be a code maker and the other one will be a code breaker. Code will be 4 digits from 1 to 6 (we can assign respective colors). Another player will be a code breaker who need to identify the code that code maker created within the given number of chances. For each guess of 4 digits code breaker will be awarded with feedbacks. If the number in the guessed code by code breaker is in the right position, then code breaker will be awarded with a color identifying one number in the code is in correct position. If the number in the guessed code by code breaker is correct but in the wrong position, then the code breaker will be awarded with another different feedback or color, showing you have one number in the code correct but in the wrong position. For Example, if the code maker's code is 1122 and the guess is 1212 then the feedback will be totally 4 markers - 2 will be in a different state identifying 2 numbers in correct positions. 2 will be in another different state identifying 2 numbers in wrong positions.This is the game.
+
+Steps:
+-> Understand the Problem (Explain simply, diagram)
+-> Plan (Pseudo Code, inputs, outputs, steps, ui, comments)
+-> Divide and Conquer (Split the problem into sub problems)
+
+Random Ideas:
+-> Color
+-> Implement KNUTH
+
+Understand the Problem:
+	Problem Explained above in own words. We need to first identify what are things will be in the game. Then we can plan what are classes and objects will be in the project with respective methods and attributes and what are the algorithms and datastructures we are going to use roughly.
+	The Problem Consists of human player, computer player, code maker, code breaker, and checker for guesses and show results.
+	So I think if we have a player class with code maker instance method, we can inherit it for human and computer while overriding the code maker method for the computer.Same applies to code breaker also because for human player we need to get input from him/her. But for computer player we need to get the code from the algorithm. So we can create a common class and overriding it can be helpful.
+	First we need to ask human player, how he going to play code maker or a code breaker. With that input we can assign a respective role to the computer player.The Game class will control this behaviour. It will assign roles as Code Maker for the maker and Code Breaker for breaker. So it can call respective methods from the objects to get the correct input.
+	Class Player
+		code
+		create_code
+		guess_code
+	end
+
+	Class HumanPlayer < Player
+		super
+		super
+	end
+
+	Class ComputerPlayer < Player
+		create_code
+		guess_code
+	end
+ So now the maker can give us the code via generating it with create_code method then we can access it via the code attribute of the maker.
+	How computer will guess the Code?
+		=> Separate class for guessing code
+	Class GuessCode
+		get_code
+	end
+	get_code method will give us the code to compare
+Game class will control the flow till the game end. We will ask user the role he want then send objects according to the game method where we initialize it with code maker and code breaker attributes with the respective objects.
+	Class Game
+		init
+			code_maker
+			code_breaker
+	end
+So now we have code maker and code breaker we can start play with first asking the code maker what is the code with their respective interface method. Then we can store it in a variable of Game object. After that we need to get the guessings one by one from the code breaker via it's respective interface and we need a feedback class to give feedbacks accordingly so that our GuessCode class can utilize it.
+Now by this we create interfaces and know what they output so it will be easier to manage the interactions and also we know the dependencies so we can easily split the work and do one part at a time and finally integrating everything.
+	Feedback class. Display module.
+	class FeedBack
+	end
+	Module Display
+	end
+	Class Game
+		play
+			make_code
+			start_guess
+			check_win
+	end
+		
+Plan:
+Human Player Input - Choice on Code Maker or Code Breaker, Code to Make  
+Output - Win or Lose Result of the Code Breaker, Code Guesses one by one
+
+Class Player
+-> code
+-> name
+-> create_code
+-> guess_code
+Implementations differ for create_code and guess_code for computer player. Default will be empty definitions. Overriding makes methods usable. Name attribute that's common.
+
+Now we have players ready with the code.
+We can input from users for all code related inputs. But for computers we need to create code for that so we are having a separate class for computer guesses and we can use the guess_code method to randomly generate a code.
+Class GuessCode
+-> Create_Code
+-> guess
+We can create the input via the create code method and we can access it via the guess attribute.All we need to do is calling guess method it will internally call create_code and gives us the result implementation for the create_code will be done later.
+
+Now we need to pass to objects to Game class so it can assign code maker and code breaker. First object will be code maker and the second will be code breaker. So we need to ask human player whether they are going to be code maker or code breaker. After that input we send the objects in the right order to the game class where it will assign accordingly.
+Now we can call the Game's play method to start the game. First it will ask the respective code maker to create the code by accessing the object's create_code method we can utilize display module to print data to the screen neetly. After that the guessing will begin. Default guesses will be 12. Game will ask the breaker object's guess attribute to access the guessed code and it will call the feedback object's feedback method with the guess and the code to give feedback on it.is_win? method gives the breaker win or not it's called via Game's check_win method so if the winner found, Game will call display modules's according method to print the result.
+	Class Feedback
+	-> feedback guess, code
+	-> is_win?
+	-> result
+So splitting the Parts,
+Wrap Everything with MasterMind Module (Try),
+	Class Player
+	Class HumanPlayer
+	Class ComputerPlayer
+	Class Guess
+	Class FeedBack
+	Class Game
+	Module Display
+
+Pseudo Code:
+	Create Player Class with Dummy Methods and Attributes.
+	Attributes => code, name. Methods => create_code, guess_code	
+	Create Human Player Class that Inherits from Player and Overrides the Methods with it's own.
+
+	Create Computer Player Class that Inherits from Player and Overrides the Methods with it's own.
+
+	Test These Classes with Custom Inputs and Outputs.
+
+	Class Player
+		name, code
+		create_code
+		guess_code
+	end
+
+	Class HumanPlayer < Player
+		create_code
+		guess_code
+	end
+
+	Class ComputerPlayer < Player
+		create_code
+		guess_code
+	end
+	or we can directly access the code so it will call create_code internally. also i can create guess attribute for guess. Let's try it.
+
+
+
+
+
+
+
+
+
+
