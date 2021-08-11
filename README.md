@@ -1,7 +1,8 @@
 
 # Mastermind
-This project is part of the [The Odin Project](https://www.theodinproject.com/paths/full-stack-ruby-on-rails/courses/ruby-programming/lessons/mastermind)'s Ruby curriculum. 
-
+This project is part of the [The Odin Project](https://www.theodinproject.com/paths/full-stack-ruby-on-rails/courses/ruby-programming/lessons/mastermind)'s Ruby curriculum.
+</br>
+_This project's previous commits are located in another github repository. I currently separated this from there._
 ## Game Description
 There are many variations of Mastermind, according to [Wikipedia](https://en.wikipedia.org/wiki/Mastermind_(board_game)), so I choose to use the original game rules. There are 6 different colors pegs that form a 4 peg "code" that another player tries to break in 12 guesses. After each guess, they receive feedback on the number of pegs that were the right color or if that right color was also in the correct spot. 
 
