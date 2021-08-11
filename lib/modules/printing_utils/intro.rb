@@ -10,7 +10,7 @@ module Intro
   def basic_rules
     puts yellow('Players => Code Maker & Code Breaker (Alternatively).', bold: true)
     puts cyan('Even number of Rounds will be played.', bold: true)
-    puts yellow("Code Breaker need to guess the Code Maker's Secret in 10 or less guesses.", bold: true)
+    puts yellow("Code Breaker need to guess the Code Maker's Secret in 12 or less guesses.", bold: true)
     puts cyan('For Each guess Code Breaker take Code Maker will be awarded with one point.', bold: true)
     puts yellow('For Each guess Code Breaker take feedback will be given.', bold: true)
     puts cyan('At the end of all rounds, Whoever has the highest points wins.', bold: true)

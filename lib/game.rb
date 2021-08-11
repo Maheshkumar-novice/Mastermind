@@ -39,14 +39,14 @@ module Mastermind
 
     def play
       self.secret_code = maker.make_code
-      10.times do |counter|
+      12.times do |counter|
         print_move(counter)
         set_guess
         create_feedback
         score[maker.name] += 1
         break if winner?
 
-        announce_failed if counter == 9
+        announce_failed if counter == 11
         sleep 0.75
       end
     end
