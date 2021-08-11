@@ -100,6 +100,10 @@ module Mastermind
     end
 
     def announce_winner
+      if score[maker.name] == score[breaker.name]
+        puts 'Draw!'
+        return
+      end
       print_winner(score.key(score.values.max))
     end
 
