@@ -1,16 +1,35 @@
 
 # [Mastermind](https://en.wikipedia.org/wiki/Mastermind_(board_game))
 This project is part of the [The Odin Project](https://www.theodinproject.com/paths/full-stack-ruby-on-rails/courses/ruby-programming/lessons/mastermind)'s Ruby curriculum.
-
-## Table of Contents
-* [Description](#description)
-* [Demo](#demo)
-* [Built With](#built-with)
-* [Algorithm](#algorithm)
-* [Rules](#rules)
-* [Play Online](#play-online)
-* [Play Local](#play-local)
-* [What I learned](#what-i-learned)
+<details open="open">
+  <summary><h2 style="display: inline-block">Table Of Contents</h2></summary>
+  <ol>
+    <li>
+      <a href="#description">Description</a>
+    </li>
+     <li>
+      <a href="#rules">Rules</a>
+    </li>
+    <li>
+      <a href="#demo">Demo</a>
+    </li>
+    <li>
+      <a href="#built-with">Built With</a>
+    </li>
+    <li>
+      <a href="#algorithm">Algorithm</a>
+    </li>
+    <li>
+      <a href="#play-online">Play Online</a>
+    </li>
+    <li>
+      <a href="#play-local">Play Local</a>
+    </li>
+    <li>
+      <a href="#what-i-learned">What I Learned</a>
+    </li>
+  </ol>
+</details>
 
 ## Description
 This implementation of the **Mastermind** game is a **User vs Computer** type of game played in the Terminal. One will be the **Code Maker** and the other will be the **Code Breaker**. Code Maker will generate a **4 digit** number (Secret Code) where each digit contain a number between **1 to 6**. Code Breaker needs to guess the number by maximum **12** guesses. 
