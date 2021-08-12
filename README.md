@@ -42,8 +42,8 @@ This implementation of the **Mastermind** game is a **User vs Computer** type of
 * Totally even number of rounds will be played.
 * At the end of all rounds whoever has the highest points wins.
 * After each round players' roles switched from Maker to Breaker and vice-versa.
-* Example of Valid Codes, 1111, 1234, 5552. 
-* Example of Invalid Codes, 0011, 13435, 666113, abcd.
+* Examples of **Valid Codes,** 1111, 1234, 5552. 
+* Examples of **Invalid Codes,** 0011, 13435, 666113, abcd.
 ## Demo
 ![Example](./assets/example.gif)
 </br>
