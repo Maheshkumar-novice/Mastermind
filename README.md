@@ -35,7 +35,7 @@ Algorithm used for Computer Player's guessing is the **Swaszek** strategy. [Read
 [repl.it](https://replit.com/@TheGeek2/mastermind)
 ## Play Local
 ### prerequisites
-You need to have Ruby locally. If you don't have, use [this](https://www.theodinproject.com/paths/full-stack-ruby-on-rails/courses/ruby-programming/lessons/installing-ruby-ruby-programming) to install Ruby first.
+You need to have Ruby installed locally. If you don't have, use [this](https://www.theodinproject.com/paths/full-stack-ruby-on-rails/courses/ruby-programming/lessons/installing-ruby-ruby-programming) to install Ruby first.
 ### installation
 ```sh
 git clone git@github.com:Maheshkumar-novice/Mastermind.git
