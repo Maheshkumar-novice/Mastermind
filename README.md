@@ -28,6 +28,9 @@ This project is part of the [The Odin Project](https://www.theodinproject.com/pa
     <li>
       <a href="#what-i-learned">What I Learned</a>
     </li>
+     <li>
+      <a href="#acknowledgements">Acknowledgements</a>
+    </li>
   </ol>
 </details>
 
@@ -75,3 +78,5 @@ ruby main.rb
 * How to print color text
 * How to use unicode characters with Ruby
 * How to create a good readme
+## Acknowledgements
+* [Replit](https://replit.com)
