@@ -20,5 +20,8 @@ This implementation of the **Mastermind** game is a **User vs Computer** type of
 </br>
 ## Built With
 * Ruby
-## Live
+## Play Online
 [repl.it](https://replit.com/@TheGeek2/mastermind)
+## Play Local
+```sh
+git clone
