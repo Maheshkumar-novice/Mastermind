@@ -24,4 +24,11 @@ This implementation of the **Mastermind** game is a **User vs Computer** type of
 [repl.it](https://replit.com/@TheGeek2/mastermind)
 ## Play Local
 ```sh
-git clone
+git clone git@github.com:Maheshkumar-novice/Mastermind.git
+```
+```sh
+cd Mastermind
+```
+```sh
+ruby main.rb
+```
