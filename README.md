@@ -54,5 +54,4 @@ ruby main.rb
 * How to split the project into small parts and combining them to make a working project
 * How to print color text
 * How to use unicode characters with Ruby
-* How to import github repo in [repl.it](repl.it)
 * How to create a good readme
