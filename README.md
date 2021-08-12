@@ -79,4 +79,5 @@ ruby main.rb
 * How to use unicode characters with Ruby
 * How to create a good readme
 ## Acknowledgements
+* [The Odin Project](https://theodinproject.com)
 * [Replit](https://replit.com)
