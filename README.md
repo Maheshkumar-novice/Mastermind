@@ -55,7 +55,7 @@ This implementation of the **Mastermind** game is a **User vs Computer** type of
 ## Algorithm
 Algorithm used for Computer Player's guessing is the **Swaszek** strategy. [Read more here](https://puzzling.stackexchange.com/a/8884)
 ## Play Online
-[repl.it](https://replit.com/@TheGeek2/mastermind)
+[replit](https://replit.com/@TheGeek2/mastermind)
 ## Play Local
 ### prerequisites
 You need to have Ruby installed locally. If you don't have, use [this](https://www.theodinproject.com/paths/full-stack-ruby-on-rails/courses/ruby-programming/lessons/installing-ruby-ruby-programming) to install Ruby first.
