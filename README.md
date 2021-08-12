@@ -6,10 +6,10 @@ This project is part of the [The Odin Project](https://www.theodinproject.com/pa
 * [Description](#description)
 * [Demo](#demo)
 * [Built With](#built-with)
+* [Algorithm](#algorithm)
 * [Rules](#rules)
 * [Play Online](#play-online)
 * [Play Local](#play-local)
-* [Algorithm](#algorithm)
 * [What I learned](#what-i-learned)
 
 ## Description
@@ -20,6 +20,8 @@ This implementation of the **Mastermind** game is a **User vs Computer** type of
 </br>
 ## Built With
 * Ruby
+## Algorithm
+## Rules
 ## Play Online
 [repl.it](https://replit.com/@TheGeek2/mastermind)
 ## Play Local
@@ -32,3 +34,4 @@ cd Mastermind
 ```sh
 ruby main.rb
 ```
+## What I Learned
