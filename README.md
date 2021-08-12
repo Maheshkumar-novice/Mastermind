@@ -81,3 +81,5 @@ ruby main.rb
 ## Acknowledgements
 * [The Odin Project](https://theodinproject.com)
 * [Replit](https://replit.com)
+
+[Move To Top](#mastermind)
