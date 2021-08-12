@@ -21,6 +21,7 @@ This implementation of the **Mastermind** game is a **User vs Computer** type of
 ## Built With
 * Ruby
 ## Algorithm
+Algorithm used for Computer Player's guessing is the **Swaszek** strategy. [Read more here](https://puzzling.stackexchange.com/a/8884)
 ## Rules
 ## Play Online
 [repl.it](https://replit.com/@TheGeek2/mastermind)
