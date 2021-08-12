@@ -15,7 +15,7 @@ module InputPrompts
   end
 
   def maker_or_breaker
-    yellow("Do you want to be #{magenta('Code Maker')} or #{magenta('Code Breaker')} #{cyan('(0 or 1)')} > ")
+    yellow("Do you want to be #{magenta('Code Maker')} or #{magenta('Code Breaker')} #{cyan('(Enter 0 or 1)')} > ")
   end
 
   def computer_guess

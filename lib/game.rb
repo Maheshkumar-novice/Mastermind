@@ -10,7 +10,7 @@ module Mastermind
   # Game class to control the flow of the game
   class Game
     include Display
-    attr_accessor :maker, :breaker, :score, :secret_code, :guess, :feed, :feedback_creator, :number_of_games
+    attr_accessor :maker, :breaker, :score, :secret_code, :guess, :feedback, :feedback_creator, :number_of_games
 
     def initialize
       @score = Hash.new(0)
@@ -33,7 +33,7 @@ module Mastermind
         print_players(maker, breaker)
         play
         self.maker, self.breaker = breaker, maker
-        self.feed = nil
+        self.feedback = nil
       end
     end
 
@@ -72,8 +72,8 @@ module Mastermind
     end
 
     def create_feedback
-      self.feed = feedback_creator.give_feedback(guess, secret_code)
-      print_feedback(feed)
+      self.feedback = feedback_creator.give_feedback(guess, secret_code)
+      print_feedback(feedback)
     end
 
     def total_games
@@ -87,16 +87,16 @@ module Mastermind
     end
 
     def choose_choice
-      user_choice = gets.chomp.to_i
-      until [0, 1].include?(user_choice)
+      user_choice = gets.chomp
+      until %w[0 1].include?(user_choice)
         print error(maker_or_breaker)
-        user_choice = gets.chomp.to_i
+        user_choice = gets.chomp
       end
-      user_choice
+      user_choice.to_i
     end
 
     def set_guess
-      self.guess = breaker.make_guess(feed)
+      self.guess = breaker.make_guess(feedback)
     end
 
     def announce_winner
