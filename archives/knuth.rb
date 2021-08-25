@@ -63,10 +63,9 @@ module Mastermind
     private
 
     def eliminate(feedback_hash, guess)
-      knuth_codes.reject! do |value|
-        feedback_creator.give_feedback(guess, value) != feedback_hash
+      knuth_codes.select! do |value|
+        feedback_creator.give_feedback(guess, value) == feedback_hash
       end
     end
   end
 end
-
